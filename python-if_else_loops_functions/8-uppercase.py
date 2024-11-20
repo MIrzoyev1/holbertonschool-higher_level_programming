@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from 8-uppercase import uppercase
-
-uppercase("holberton")
 def uppercase(str):
     for char in str:
         if 'a' <= char <= 'z':
