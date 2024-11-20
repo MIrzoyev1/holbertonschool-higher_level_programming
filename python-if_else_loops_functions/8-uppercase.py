@@ -9,5 +9,7 @@ def uppercase(str):
             
             uppercase_char = char
         print("{}".format(uppercase_char), end="")
-    print()
-    uppercase("hello world!")
+        print()
+        uppercase("holberton")  # Expected: HOLBERTON
+        uppercase("hello world!")
+
