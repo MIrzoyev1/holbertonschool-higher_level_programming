@@ -5,7 +5,3 @@ def islower(c):
         return True
     else:
         return False
-print(islower('a'))  
-print(islower('z'))  
-print(islower('A')) 
-print(islower('1'))  
