@@ -1,15 +1,10 @@
-#!/usr/bin/python3
+#!/usr/bin/python3
+from 8-uppercase import uppercase
 def uppercase(str):
     for char in str:
-        
         if 'a' <= char <= 'z':
-            
             uppercase_char = chr(ord(char) - 32)
         else:
-            
             uppercase_char = char
         print("{}".format(uppercase_char), end="")
-        print()
-        uppercase("holberton")  # Expected: HOLBERTON
-        uppercase("hello world!")
-
+    print()  
