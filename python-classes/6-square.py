@@ -81,7 +81,7 @@ class Square:
         for _ in range(self.__position[1]):
             print()
 
-        # Print the square with the horizontal space (position[0]) 
+        # Print the square with the horizontal space (position[0])
         # and '#' characters
         for _ in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)
