@@ -1,15 +1,16 @@
 #!/usr/bin/python3
+"""Module defining a Square class with size, position, area, and printing functionality"""
+
 class Square:
     def __init__(self, size=0, position=(0, 0)):
         """Initialize a Square instance.
 
         Args:
             size (int, optional): The size of the square. Defaults to 0.
-            position (tuple, optional): The position of
-            the square. Defaults to (0, 0).
+            position (tuple, optional): The position of the square. Defaults to (0, 0).
         """
-        self._size = size
-        self._position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -63,17 +64,20 @@ class Square:
         return self.__size ** 2
 
     def my_print(self):
-        """Print the square using '#' characters, respecting position."""
+        """Prints the square with the character '#' at the given position.
+
+        If size is 0, prints an empty line. Otherwise, prints the square at
+        the specified position using spaces for indentation.
+        """
         if self.__size == 0:
             print()
             return
 
-        # Print vertical spacing based on position[1]
+        # Print the vertical space (position[1])
         for _ in range(self.__position[1]):
             print()
 
-        # Print the square
+        # Print the square with the horizontal space (position[0]) and '#' characters
         for _ in range(self.__size):
-            # Print horizontal spacing based on position[0]
-            print(" " * self.__position[0], end="")
-            print("#" * self.__size)
+            print(" " * self.__position[0] + "#" * self.__size)
+
