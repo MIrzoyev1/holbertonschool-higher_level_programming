@@ -2,8 +2,8 @@
 """Module defining a Square class with size, position, area, and printing functionality"""
 
 class Square:
-    """Square class with size and position"""
-
+    ''' Square class with size and position '''
+    
     def __init__(self, size=0, position=(0, 0)):
         """Initialize a Square instance.
 
