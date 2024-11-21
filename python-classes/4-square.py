@@ -1,26 +1,28 @@
 #!/usr/bin/python3
+"""Module defining a Square class with getter, setter, and area calculation"""
 
-# Assuming s1 and s2 are already defined as Square instances
-s1 = Square()  # size = 0
-s2 = Square(4)  # size = 4
 
-# Print the area for s1 and s2
-print(s1.area())  # Output: 0
-print(s2.area())  # Output: 16
+class Square:
+    """Class defining a square with private size attribute and area method"""
 
-# Change size of s2
-s2.size = 5
-print(s2.area())  # Output: 25
+    def __init__(self, size=0):
+        """Initialize the square with size"""
+        self.size = size
 
-# Try creating a square with invalid size (-3), which should raise an exception
-try:
-    s3 = Square(-3)  # This will raise a ValueError
-except ValueError as e:
-    print(e)  # This will print "size must be >= 0"
+    @property
+    def size(self):
+        """Getter for the size attribute"""
+        return self.__size
 
-# Try creating a square with invalid size
-("size"), which should raise a TypeError
-try:
-    s4 = Square("size")  # This will raise a TypeError
-except TypeError as e:
-    print(e)  # This will print "size must be an integer"
+    @size.setter
+    def size(self, value):
+        """Setter for the size attribute with validation"""
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        if value < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = value
+
+    def area(self):
+        """Returns the current area of the square"""
+        return self.__size ** 2
