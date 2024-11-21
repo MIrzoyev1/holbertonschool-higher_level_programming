@@ -2,7 +2,8 @@
 """Module defining a Square class with size, position, area, and printing functionality"""
 
 class Square:
-    ''' Square class with size and position '''
+    """Square class with size and position"""
+
     def __init__(self, size=0, position=(0, 0)):
         """Initialize a Square instance.
 
@@ -51,8 +52,8 @@ class Square:
             TypeError: If position is not a tuple of 2 positive integers.
         """
         if (not isinstance(value, tuple) or
-            len(value) != 2 or
-            not all(isinstance(x, int) and x >= 0 for x in value)):
+                len(value) != 2 or
+                not all(isinstance(x, int) and x >= 0 for x in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
