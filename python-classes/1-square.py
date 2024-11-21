@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Module for creating and empty class"""
+"""Module for creating an empty class"""
 
 
 class Square:
     """Class for square"""
 
-
-def __init__(self, size):
-    self.__size = size
+    def __init__(self, size):
+        """Initialize the size of the square"""
+        self.__size = size
