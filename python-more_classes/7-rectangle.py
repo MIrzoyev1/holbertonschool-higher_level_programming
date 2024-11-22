@@ -1,12 +1,15 @@
 #!/usr/bin/python3
 """
 This module defines a Rectangle class that represents a geometric rectangle.
-The rectangle can be printed using customizable symbols and keeps track of instances.
+The rectangle can be printed using customizable symbols and
+keeps track of instances.
 """
+
 
 class Rectangle:
     """
-    A class that defines a rectangle with width, height, and display properties.
+    A class that defines a rectangle with width,
+    height, and display properties.
     """
     number_of_instances = 0
     print_symbol = "#"
