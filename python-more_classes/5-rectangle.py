@@ -93,7 +93,8 @@ class Rectangle:
 
         Returns:
             str: A string containing a visual representation of the rectangle
-                 using "#" characters. If either width or height is 0, returns an empty string.
+                 using "#" characters. 
+                 If either width or height is 0, returns an empty string.
         '''
         if self.__width == 0 or self.__height == 0:
             return ""
@@ -113,7 +114,8 @@ class Rectangle:
         return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
-        ''' Destructor for the Rectangle class. Prints a message when the rectangle is deleted.
+        ''' Destructor for the Rectangle class. 
+        Prints a message when the rectangle is deleted.
 
         Prints:
             "Bye rectangle..."
