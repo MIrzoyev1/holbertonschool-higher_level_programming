@@ -154,7 +154,7 @@ class Rectangle:
         return cls(size, size)
 """
 This module defines a Rectangle class with width and height attributes,
-along with various methods for calculating area, 
+along with various methods for calculating area,
 perimeter, and comparing rectangles.
 It also includes class methods for creating
 squares and static methods for comparison.
@@ -294,11 +294,12 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        """Create a new Rectangle instance where width equals height equals size.
+        """Create a new Rectangle instance
+        where width equals height equals size.
 
         Args:
             size (int): The size of the square
-            
+ 
         Returns:
             Rectangle: A new Rectangle instance representing a square
         """
