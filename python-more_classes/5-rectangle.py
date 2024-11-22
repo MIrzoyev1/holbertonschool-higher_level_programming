@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-''' class Rectangle that defines a rectangle
+''' Class Rectangle that defines a rectangle
 '''
 
 class Rectangle:
     ''' Rectangle class with properties
     '''
-    
+
     def __init__(self, width=0, height=0):
         ''' Initialize a new Rectangle object.
 
