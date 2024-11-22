@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-
+"""
+This module defines a Rectangle class that represents a geometric rectangle.
+It includes functionality for area and perimeter calculation, string representation,
+and instance tracking.
+"""
 
 class Rectangle:
     """
@@ -67,4 +71,4 @@ class Rectangle:
     def __del__(self):
         """Print message when instance is deleted and decrement counter"""
         print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
+        Rectangle.number_of_instances -= 1#
