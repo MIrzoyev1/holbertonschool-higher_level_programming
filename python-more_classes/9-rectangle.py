@@ -154,8 +154,10 @@ class Rectangle:
         return cls(size, size)
 """
 This module defines a Rectangle class with width and height attributes,
-along with various methods for calculating area, perimeter, and comparing rectangles.
-It also includes class methods for creating squares and static methods for comparison.
+along with various methods for calculating area, 
+perimeter, and comparing rectangles.
+It also includes class methods for creating
+squares and static methods for comparison.
 """
 
 
@@ -264,7 +266,8 @@ class Rectangle:
         return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
-        """Print a message when an instance is deleted and decrement counter."""
+        """Print a message when an instance is
+        deleted and decrement counter."""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
