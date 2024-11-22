@@ -152,6 +152,8 @@ class Rectangle:
             Rectangle: A new Rectangle instance representing a square
         """
         return cls(size, size)
+
+
 """
 This module defines a Rectangle class with width and height attributes,
 along with various methods for calculating area,
@@ -299,7 +301,7 @@ class Rectangle:
 
         Args:
             size (int): The size of the square
- 
+
         Returns:
             Rectangle: A new Rectangle instance representing a square
         """
