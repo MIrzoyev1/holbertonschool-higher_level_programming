@@ -9,7 +9,7 @@ It also includes class methods for creating squares and static methods for compa
 class Rectangle:
     """
     A class that defines a rectangle by its width and height.
-    
+
     Attributes:
         number_of_instances (int): Count of Rectangle instances
         print_symbol: Symbol used for string representation
@@ -37,10 +37,10 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Set the width of the rectangle.
-        
+
         Args:
             value (int): The width value to set
-            
+
         Raises:
             TypeError: If width is not an integer
             ValueError: If width is less than 0
@@ -59,10 +59,10 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """Set the height of the rectangle.
-        
+
         Args:
             value (int): The height value to set
-            
+
         Raises:
             TypeError: If height is not an integer
             ValueError: If height is less than 0
@@ -75,7 +75,7 @@ class Rectangle:
 
     def area(self):
         """Calculate the area of the rectangle.
-        
+
         Returns:
             int: The area of the rectangle
         """
@@ -83,7 +83,7 @@ class Rectangle:
 
     def perimeter(self):
         """Calculate the perimeter of the rectangle.
-        
+
         Returns:
             int: The perimeter of the rectangle
         """
@@ -93,7 +93,7 @@ class Rectangle:
 
     def __str__(self):
         """Return a string representation of the rectangle.
-        
+
         Returns:
             str: The string representation of the rectangle
         """
@@ -104,7 +104,7 @@ class Rectangle:
 
     def __repr__(self):
         """Return a string representation of the rectangle for recreation.
-        
+
         Returns:
             str: String representation of rectangle instance creation
         """
@@ -118,14 +118,14 @@ class Rectangle:
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Compare two rectangles and return the one with the bigger area.
-        
+
         Args:
             rect_1: First Rectangle instance
             rect_2: Second Rectangle instance
-            
+
         Returns:
             Rectangle: The rectangle with the larger area
-            
+
         Raises:
             TypeError: If either rect_1 or rect_2 is not a Rectangle instance
         """
@@ -140,10 +140,10 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """Create a new Rectangle instance where width equals height equals size.
-        
+
         Args:
             size (int): The size of the square
-            
+
         Returns:
             Rectangle: A new Rectangle instance representing a square
         """
@@ -158,7 +158,7 @@ It also includes class methods for creating squares and static methods for compa
 class Rectangle:
     """
     A class that defines a rectangle by its width and height.
-    
+
     Attributes:
         number_of_instances (int): Count of Rectangle instances
         print_symbol: Symbol used for string representation
@@ -186,10 +186,10 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Set the width of the rectangle.
-        
+
         Args:
             value (int): The width value to set
-            
+
         Raises:
             TypeError: If width is not an integer
             ValueError: If width is less than 0
@@ -208,10 +208,10 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """Set the height of the rectangle.
-        
+
         Args:
             value (int): The height value to set
-            
+
         Raises:
             TypeError: If height is not an integer
             ValueError: If height is less than 0
@@ -224,7 +224,7 @@ class Rectangle:
 
     def area(self):
         """Calculate the area of the rectangle.
-        
+
         Returns:
             int: The area of the rectangle
         """
@@ -232,7 +232,7 @@ class Rectangle:
 
     def perimeter(self):
         """Calculate the perimeter of the rectangle.
-        
+
         Returns:
             int: The perimeter of the rectangle
         """
@@ -242,7 +242,7 @@ class Rectangle:
 
     def __str__(self):
         """Return a string representation of the rectangle.
-        
+
         Returns:
             str: The string representation of the rectangle
         """
@@ -253,7 +253,7 @@ class Rectangle:
 
     def __repr__(self):
         """Return a string representation of the rectangle for recreation.
-        
+
         Returns:
             str: String representation of rectangle instance creation
         """
@@ -266,15 +266,14 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        """Compare two rectangles and return the one with the bigger area.
-        
+        """Compare two rectangles and return the one with the bigger area
         Args:
             rect_1: First Rectangle instance
             rect_2: Second Rectangle instance
-            
+
         Returns:
             Rectangle: The rectangle with the larger area
-            
+
         Raises:
             TypeError: If either rect_1 or rect_2 is not a Rectangle instance
         """
@@ -289,7 +288,7 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """Create a new Rectangle instance where width equals height equals size.
-        
+
         Args:
             size (int): The size of the square
             
