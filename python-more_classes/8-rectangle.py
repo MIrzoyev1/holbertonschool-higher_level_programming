@@ -1,13 +1,16 @@
 #!/usr/bin/python3
 """
 This module defines a Rectangle class that represents a geometric rectangle.
-The rectangle can be printed using customizable symbols, keeps track of instances,
+The rectangle can be printed using customizable symbols,
+keeps track of instances,
 and includes comparison functionality.
 """
 
+
 class Rectangle:
     """
-    A class that defines a rectangle with width, height, and display properties.
+    A class that defines a rectangle with width,
+    height, and display properties.
     Includes methods for area calculation and rectangle comparison.
     """
     number_of_instances = 0
@@ -64,7 +67,7 @@ class Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
-        
+
         if rect_1.area() >= rect_2.area():
             return rect_1
         return rect_2
