@@ -2,6 +2,7 @@
 ''' Class Rectangle that defines a rectangle
 '''
 
+
 class Rectangle:
     ''' Rectangle class with properties
     '''
@@ -19,7 +20,7 @@ class Rectangle:
     @property
     def width(self):
         ''' Getter for the width of the rectangle.
-        
+
         Returns:
             int: The current width of the rectangle.
         '''
@@ -31,7 +32,7 @@ class Rectangle:
 
         Args:
             value (int): The value to set the width to.
-        
+
         Raises:
             TypeError: If the width is not an integer.
             ValueError: If the width is less than 0.
@@ -45,7 +46,7 @@ class Rectangle:
     @property
     def height(self):
         ''' Getter for the height of the rectangle.
-        
+
         Returns:
             int: The current height of the rectangle.
         '''
@@ -57,7 +58,7 @@ class Rectangle:
 
         Args:
             value (int): The value to set the height to.
-        
+
         Raises:
             TypeError: If the height is not an integer.
             ValueError: If the height is less than 0.
@@ -113,9 +114,8 @@ class Rectangle:
 
     def __del__(self):
         ''' Destructor for the Rectangle class. Prints a message when the rectangle is deleted.
-        
+
         Prints:
             "Bye rectangle..."
         '''
         print("Bye rectangle...")
-
